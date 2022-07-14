@@ -1,0 +1,226 @@
+<html>
+<head>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css"
+
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+/* Style the body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+/* Header/logo Title */
+.header {
+  padding: 80px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+}
+
+/* Increase the font size of the heading */
+.header h1 {
+  font-size: 40px;
+}
+
+/* Style the top navigation bar */
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the navigation bar links */
+.navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Right-aligned link */
+.navbar a.right {
+  float: right;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side {
+  -ms-flex: 30%; /* IE10 */
+  flex: 30%;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<body bgcolor=silver>
+<div class="navbar">
+  <a href="https://www.etstuzla.edu.ba/">Skola</a>
+ 
+</div>
+ <div class="navbar">
+  <a href="https://www.etstuzla.edu.ba/">Kontakt
+ 
+</div>
+</a>
+  <div class="search-container">
+    <form action="/action_page.php">
+      <input type="text" placeholder="Search.." name="search">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</div>
+<p align=center></br><img src="https://tuzlalive.ba/wp-content/uploads/2021/10/elektrotehnicka-skola-tuzla.jpg" width=700
+<i> Nasa Skola </i> 
+<p align=center></br><img src="data:image/jpeg;base64,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" width=200
+<i  style="font-size 50px">Logo Skole</i>
+<b><p align=center font-size=40>Elektrotehnička škola Tuzla je srednja škola sa sjedištem u Tuzli, koja je osnovana 1970. godine, sa ciljem da u jednu školu spoji sva zanimanja vezana za elektrotehniku, koja su prije 1970. godine postojala u dvije škole.
+Elektrotehnička škola Tuzla posvećena je podučavanju svojih učenika većini elektrotehničkih izvora i tehnologije. U školi se nalazi i visokotehnološka električna oprema koja učenicima pruža više mogućnosti za praktičan rad. Studenti mogu birati između brojnih kolegija kao što su tehničar za računalstvo, tehničar za mehatroniku, tehničar za elektroenergetiku, tehničar elektronike, elektrotehničar, elektrotehničar, autoelektričar i električar. Škola planira prijeći na energiju solarnih panela do ljeta 2019., čime će se otvoriti novi dostupni tečaj: tehničar obnovljivih izvora energije. </b> </p>
+<p center=right-side> <p align=center font-size=80> <b>Tabele ucenika koji su primljeni u</b> </p> </p>
+<p center> <p align=center font-size=35> <b>  </b> </p> </p>
+<center>
+<table border=3>
+<tr>
+<td> Pocetna </td>
+<td> Razred</td>
+<td>Predmetni Nastavnici</td>
+     
+ </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>  </td>
+</tr>
+<tr>
+<td> </td>
+<td> </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td> </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td> </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td> </td>
+</tr>
+<tr>
+<td> </td>
+<td>  </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td> </td>
+</tr>
+<tr>
+<td>  </td>
+<td> </td>
+<td>  </td>
+</tr>
+<tr>
+<td>  </td>
+<td>  </td>
+<td> </td>
+</tr>
+</table>
+</table>
+</tr>
+</table>
+</center>
+<a href="https://www.etstuzla.edu.ba/"> <img src="data:image/jpeg;base64,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"> </a>
+</body> 																		
+</html>
